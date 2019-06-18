@@ -1,0 +1,218 @@
+body
+{
+    background-color: #e7e7e7;
+    font-family: 'Helvetica', sans-serif;
+}
+
+/* Grid Layout Content */
+
+article
+{
+display: grid;
+grid-template-rows: 36px 50px auto auto auto auto auto;
+grid-row-gap: 0;
+grid-template-columns: auto 82% auto;
+grid-template-areas: ".nav nav.";
+grid-template-areas: ".header header.";
+grid-template-areas: ".content content";
+grid-template-areas: ".footer footer";
+}
+
+/* Grid Locations */
+
+header
+{
+  grid-area: header;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end:2;
+}
+
+body
+{
+   min-height: 400px;
+   margin-bottom: 100px;
+   clear: both;
+}
+
+nav
+{
+    grid-area: nav;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+}
+
+div.aboutUs
+{
+    grid-area: content;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row: 3;
+    grid-row-end: 4;
+    padding-top: 0;
+
+}
+
+div.bookingConfirmation
+{
+    grid-area: content;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row: 3;
+    grid-row-end: 4;
+    padding-top: 0;
+    align-content: center;
+}
+
+div.classInfo
+{
+    grid-area: content;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row: 4;
+    grid-row-end: 5;
+    padding-top: 0;
+
+}
+
+div.availableClasses
+{
+    grid-area: content;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row: 5;
+    grid-row-end: 6;
+}
+
+div.bookingForm
+{
+    grid-area: content;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row: 6;
+    grid-row-end: 7;
+}
+
+footer
+{
+  position: fixed;
+  text-align: right;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #3eacff;
+  color: black;
+}
+
+/* Text formatting */
+
+
+h1
+{
+    text-align: center;
+    margin: 0;
+    padding: 7px;
+    background: #0d97ff;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+h2
+{
+    text-align: center;
+    margin: 0;
+    margin-bottom: 25px;
+    padding: 7px;
+    background: #0d97ff
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+h3
+{
+    text-align: left;
+    padding: 8px;
+    background: #0d97ff;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+ul.navList
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 15px;
+    overflow: hidden;
+    background-color: #0d97ff;
+}
+
+li.navEntry
+{
+    float: left;
+}
+
+a.navEntry
+{
+    grid-area: nav;
+    color: white;
+    text-align: left;
+    padding: 60px 30px;
+    text-decoration: none;
+}
+
+a.navEntry:hover
+{
+    background-color:#6eb2cc;
+    color: black;
+}
+
+input[type=text]
+{
+    width: 50%;
+    border: 1px solid black;
+    padding: 2px 4px;
+    border-radius: 4px;
+    margin-top: 5px;
+    margin-bottom:5px;
+}
+
+select
+{
+    width: 50%;
+    border: 1px solid black;
+    padding: 2px 4px;
+    border-radius: 4px;
+    margin-top: 5px;
+    margin-bottom:5px;
+}
+
+table
+{
+    border-collapse: collapse;
+}
+
+td
+{
+    border: 1px solid black;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+td.Day
+{
+    text-align: center;
+    background-color: #2F6A87;
+    color: white;
+}
+
+th
+{
+    text-align: center;
+    border: 1px solid black;
+    background-color: #2F6A87;
+    color: white;
+}
